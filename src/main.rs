@@ -12,6 +12,7 @@ mod editor;
 mod terminal;
 mod row;
 mod highlighting;
+mod filetype;
 
 pub use document::Document;
 use editor::Editor;
@@ -19,6 +20,8 @@ pub use terminal::Terminal;
 pub use editor::Position;
 pub use row::Row;
 pub use editor::SearchDirection;
+pub use filetype::FileType;
+pub use filetype::HighlightingOptions;
 
 fn main() {
     Editor::default().run();
