@@ -296,7 +296,7 @@ impl Row {
 
         while let Some(c) = chars.get(index) {
             if self.highlight_char(&mut index, opts, *c, &chars)
-                || self.highlight_char(&mut index, opts, *c, &chars)
+                || self.highlight_comment(&mut index, opts, *c, &chars)
                 || self.highlight_string(&mut index, opts, *c, &chars)
                 || self.highlight_number(&mut index, opts, *c, &chars)
             {
